@@ -1,7 +1,10 @@
-body {font-family: 'Open Sans', sans-serif;
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+header, main {font-family: 'Open Sans', sans-serif;
 background-color: #F7FAFD;
-margin-left: 60px;
-margin-right: 60px;
 }
 
 
@@ -10,25 +13,31 @@ nav{
     z-index: 100;
     display:flex;
     justify-content:flex-start;
-    border: solid green;
     justify-content: space-between;
-    gap: 800px;
     background-color: #F7FAFD;
+    width:100%;
+    padding-left: 5%;
+    padding-right: 5%;
      }
 
-.logo {
-    border: solid red;
+.icon {
     height: 90px;
     width: 100px;
 }
 
 .navbar {
     display: flex;
+    flex:auto;
     justify-content: flex-end;
-    border: solid orange;
     gap: 20px;
     align-items: center;
     font-weight: bold; 
+    list-style: none;
+    cursor:pointer;
+}
+
+.navbar li:hover {
+  color: #FF556E;
 }
 
   .dropdown-li {
@@ -39,6 +48,7 @@ nav{
   .dropdown-li:hover .dropdown {
     display:block;
     opacity: 1;
+    color:black
   }
   
   .dropdown {
@@ -49,9 +59,10 @@ nav{
   
   .dropdown li {
     list-style: none;
-    border: solid red;
     padding: 10px;
     text-align: left;
+    box-sizing: content-box;
+    width: 180px;
   }
 
   .download_navbar {
@@ -64,10 +75,11 @@ nav{
     padding-right:15px;
   }
 
+
+
   .decorations{
     display:flex;
     justify-content:space-between;
-    border: solid greenyellow;
   }
 
   .diamond {
@@ -82,7 +94,6 @@ nav{
   .yellow_circle {
     margin-top:150px;
     padding-right: 30px;
-    border: solid blue;
   }
 
   .yellow_circle img{
@@ -96,11 +107,11 @@ nav{
   }
 
    h2 {
-    border: solid palevioletred;
     font-size:medium;
     text-align:center;
-    margin-left: 300px;
-    margin-right:300px;
+    line-height: 1.7;
+    margin-left: 25%;
+    margin-right:25%;
   }
 
   .buttons {
@@ -123,6 +134,54 @@ nav{
     cursor:pointer;
   }
 
+  button:hover {
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+            animation: color-change-2x 2s linear infinite alternate both;
+  }
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #FF556E;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background:  #FF556E;
+  }
+}
+
+
+
+.privacy:hover {
+  -webkit-animation: color-change-3x 2s linear infinite alternate both;
+          animation: color-change-3x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-3x {
+0% {
+  background: white;
+}
+100% {
+  background: #FF556E;
+}
+}
+@keyframes color-change-3x {
+0% {
+  background: white;
+}
+100% {
+  background:  #FF556E;
+}
+}
+
+
+
   button img {
     height:15px;
     vertical-align:middle;
@@ -132,115 +191,126 @@ nav{
     position: relative;
     right: 200px;
     height: 300px;
-    border: solid green;
+   
+  }
+
+  .blue_circle {
+    height: 70px;
+    position: absolute;
+    z-index:2;
   }
 
   .phone_header {
     display:flex;
+    justify-content:left;
   }
 
   .phone {
-    border: solid blue;
     width:700px;
-    height:400px;
+    height:500px;
+    align-content: center;
     margin-left: 50px;
-    margin-top:20px;
+    margin-top:2%;
   }
+
+
+
+.phone:hover {
+  animation-name: bounce;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 
   .phone img {
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+    object-fit: cover;
+  }
+
+  .container_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .icons {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
   }
 
   .people_icon {
-    border: solid greenyellow;
-    display:flex;
-    flex-direction: column;
     width: 60px;
     height: 60px;
     background-color:#EBE7FA;
     border-radius:50px;
-    padding:15px;
-    
-    margin-top:2%;
+    padding:15px; 
+  }
+
+  .people_icon:hover {
+    animation-name: tilt;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes tilt {
+    0%,
+    100% {
+      
+    }
+    50% {
+      transform: rotate(19deg);
+    }
+  }
+
+  .green_bgd {
+  background-color:#DAF4EF
+  }
+
+  .pink_bgd {
+  background-color:#F8E5EA;
+  }
+
+  .yellow_bgd {
+  background-color:#F8F1DE;  
+  }
+
+  .blue_bgd {
+  background-color: #E1F2FA;
   }
 
 
-  .language_icon {
-    border: solid greenyellow;
-    width: 60px;
-    height: 60px;
-    background-color:#EBE7FA;
-    border-radius:50px;
-    padding:15px;
-    
-    margin-top:2%;
-  }
-
-  .settings_icon {
-    border: solid greenyellow;
-   
-    width: 60px;
-    height: 60px;
-    background-color:#EBE7FA;
-    border-radius:50px;
-    padding:15px;
-    
-    margin-top:2%;
-  }
-
-  .social_icon {
-    border: solid greenyellow;
-    
-    width: 60px;
-    height: 60px;
-    background-color:#EBE7FA;
-    border-radius:50px;
-    padding:15px;
-   
-    margin-top:2%;
-  }
-
-  .rocket_icon {
-    border: solid greenyellow;
-    width: 60px;
-    height: 60px;
-    background-color:#EBE7FA;
-    border-radius:50px;
-    padding:15px;
-    margin-top:2%;
-    display:flex;
-    margin-left:49%;
-  }
-
-.icons {
-  border:solid black;
-  width: 800px;
-  display:flex;
-  justify-content: space-evenly;
-  margin-left:22%;
-}
-
-.text_icons {
-  display:flex;
-  width: 800px;
-  justify-content: space-evenly;
-  align-items: baseline;
-  margin-left:22%;
-  margin-top:1%;
+.icons_text {
   font-size:small;
   font-weight: bold;
 }
-
-.text_rocket {
-  font-size:small;
-  font-weight: bold;
-  margin-left:47%;
-  margin-top:1%;
-}
-
-
 
 .footer_content {
   display:flex;

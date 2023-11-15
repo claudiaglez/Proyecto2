@@ -7,27 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="/src/img/images/favicon.png"/>
+    <link rel="stylesheet" href="/styles/style_responsive.css">
     <link rel="stylesheet" href="/styles/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Sync</title>
 </head>
 <body>
-    <header>
-    <nav> <img class="logo" src="/src/img/images/logo.svg" alt="logotipo">
+    <nav> <img class="icon" src="/src/img/images/logo.svg" alt="logotipo">
 
-<ul class="navbar">
-    <li>DESCRIPTION </li>
-    <li> FEATURES</li>
-    <li> SCREENS</li>
-    <li class="dropdown-li"> EXTRA
-    <ul class="dropdown">
-        <li>ARTICLE DETAILS</li>
-        <li>TERMS CONDITIONS</li>
-        <li>PRIVACY POLICY</li>
-    </ul>
-</li>
-    <a class="download_navbar" href="https://factoriaf5.org/"target="_blank"><li> DOWNLOAD</li></a>
-</ul>
-    </nav>
+        <ul class="navbar">
+            <li><a href="/description.html">DESCRIPTION </a></li>
+            <li>FEATURES</li>
+            <li><a href="/screens.html"> SCREENS</a></li>
+            <li class="dropdown-li"> EXTRA
+            <ul class="dropdown">
+                <li>ARTICLE DETAILS</li>
+                <li>TERMS CONDITIONS</li>
+                <li>PRIVACY POLICY</li>
+            </ul>
+        </li>
+            <a class="download_navbar" href="https://factoriaf5.org/"target="_blank"><li> DOWNLOAD</li></a>
+            </ul>
+            </nav>
+    <header>
+
     <div class="decorations">
 <div class="diamond">
 <img src="/src/img/images/decorative-green-diamond.svg" alt="rombo verde">
@@ -45,58 +51,73 @@
     </h2>
  </div>
  <div class="buttons">
-<button name="apple" type="button"><img src="/src/img/images/manzana.svg">  DOWNLOAD</button>    
-<button name="apple" type="button"><img src="/src/img/images/google_play.svg">  DOWNLOAD</button>
+<button class="color-change-2x" name="apple" type="button"><img src="/src/img/images/manzana.svg" alt="icono apple"> <a href="https://factoriaf5.org/"target="_blank">DOWNLOAD</a> </button>    
+<button class="color-change-2x" name="apple" type="button"><img src="/src/img/images/google_play.svg" alt="icono google play"><a href="https://factoriaf5.org/"target="_blank"> DOWNLOAD</a> </button>
 </div>
 <div class="phone_header">
 <div class="white_circle">
-    <img class="left_circle" src="/src/img/images/decorative-white-circle.svg">
+     <img class="blue_circle" src="/src/img/images/decorative-blue-circle.svg" alt="círculo azul decorativo">
+    <img class="left_circle" src="/src/img/images/decorative-white-circle.svg" alt="círculo blanco decorativo">
+   
     </div>
+
     <div class="phone">
-        <img src="/src/img/images/header-iphone.png">
+        <img src="/src/img/images/header-iphone.png" alt="teléfono móvil">
         </div>
 </div>
 </header>
 <main>
+<div class="container_icons">
 <div class="icons">
-    <div class="people_icon">
-        <img src="/src/img/images/people.svg"> 
-    </div>
-       
-    <div class="language_icon">
-        <img src="/src/img/images/lenguaje.svg">
-    </div>
-
-    <div class="settings_icon">
-        <img src="/src/img/images/settings.svg">
-    </div>
-
-    <div class="social_icon">
-        <img src="/src/img/images/chat.svg">
-    </div>
-
-   
-
+<div class="people_icon">
+    <img src="/src/img/images/people.svg" alt="icono personas">
 </div>
-<div class="text_icons">
-<p>Identify Goals</p>
-<p>Situation Analysis</p>
-<p>Tasks Settings</p>
-<p>Social Interation</p>
+<div>
+<p class="icons_text">Identify Goals</p>
 </div>
-<div class="rocket_icon">
-    <img src="/src/img/images/cohete.svg">
 </div>
-<p class="text_rocket">Get Things Done</p>
+<div class="icons">
+<div class="people_icon green_bgd">
+<img src="/src/img/images/lenguaje.svg" alt="icono lenguaje">
+</div>
+<div>
+<p class="icons_text">Situation Analysis</p>
+</div>
+</div>
+<div class="icons">
+<div class="people_icon pink_bgd">
+<img src="/src/img/images/settings.svg" alt="icono herramientas">
+</div>
+<div>
+<p class="icons_text">Tasks Settings</p>
+</div>
+</div>
+<div class="icons">
+<div class="people_icon yellow_bgd">
+<img src="/src/img/images/chat.svg" alt="icono chat">
+</div>
+<div>
+<p class="icons_text">Social Interation</p>
+</div>
+</div>
+</div>
+<div class="icons">
+<div class="people_icon blue_bgd">
+<img src="/src/img/images/cohete.svg" alt="icono cohete">
+</div>
+<div>
+<p class="icons_text">Get Things Done</p>
+</div>
+</div>
 
 </main>
 <footer>
 <div class="footer_content">
 <div class="contact">
     <p class="title_footer">Contact Info</p>
-    <p><img src="/src/img/images/placeholder.svg"> 22 Innovation Street,CA US</p>
-    <p><img src="/src/img/images/email.svg"> office@syncmobile.com</p>
-    <p><img src="/src/img/images/telefono.svg"> +44 376 945 23</p>
+    <p><img src="/src/img/images/placeholder.svg" alt="icono dirección"> 22 Innovation Street,CA US</p>
+    <p><img src="/src/img/images/email.svg" alt="icono mail"> office@syncmobile.com</p>
+    <p><img src="/src/img/images/telefono.svg" alt="icono teléfono"> +44 376 945 23</p>
 </div>
 <div class="links">
     <p class="title_footer">Value Links</p>
@@ -113,10 +134,10 @@
 
 </div>
 <div class="social_media">
-<img src="/src/img/images/facebook.svg">
-<img src="/src/img/images/twitter.svg">
-<img src="/src/img/images/pinterest.svg">
-<img src="/src/img/images/instagram.svg">
+<img src="/src/img/images/facebook.svg" alt="icono facebook">
+<img src="/src/img/images/twitter.svg" alt="icono twitter">
+<img src="/src/img/images/pinterest.svg" alt="icono pinterest">
+<img src="/src/img/images/instagram.svg" alt="icono instagram">
 </div>
 
 </div>
