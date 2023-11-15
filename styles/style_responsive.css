@@ -1,10 +1,23 @@
-/* máximo 768px y mínimo 425px h
-Poner imagen al centro y quitar círculos*/
-@media only screen and (min-width:320px) and (max-width:425px)
+/* máximo 768px y mínimo 425px */
+@media only screen and (min-width:320px) and (max-width:426px)
    {
     .navbar {
-        display:none;
+      display:flex;
+      flex-direction: row;
+      font-size: 7px;
     }
+
+   nav {
+      height: 30px;
+   }
+
+   .icon {
+      left: 2%;
+   }
+   }
+
+    
+
       .phone {
         align-content: center;
         max-height: 300px;
@@ -20,7 +33,6 @@ Poner imagen al centro y quitar círculos*/
        .white_circle {
         display:none;
        }
-
 
        .title {
         font-size: 30px;
@@ -51,9 +63,15 @@ Poner imagen al centro y quitar círculos*/
     display:none;
    }
 
-   .navbar {
-    display:none;
-   }
+   .container_icons {
+      top:50px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .icons {
+      flex-direction: column;
+    }
 
 
 }
