@@ -202,7 +202,8 @@ nav{
 
   .phone_header {
     display:flex;
-    justify-content:left;
+    justify-content:center;
+    margin-left: 20px;
   }
 
   .phone {
