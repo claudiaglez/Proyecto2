@@ -1,20 +1,19 @@
 # Proyecto2
-Objetivo
+## Objetivo
 Réplica Web de la aplicación Sync
 
-Instalación
+## Instalación
 Se deberá clonar el repositorio para poder instalarlo:
-https://github.com/claudiaglez/Proyecto2.git
+``` git clone https://github.com/claudiaglez/Proyecto2.git```
 
-Despliegue
+## Despliegue
 
 Proyecto desplegado en Netlify https://elaborate-tiramisu-5b19bb.netlify.app/
 
-Desarrollado con 
-HTML5 
-CSS3
+## Desarrollado con 
+[![My Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev)
 
-Autora
+## Autora
 Claudia González github.com/claudiaglez
 
 
